@@ -1,1 +1,23 @@
 .zcompdump*
+
+# Secret hygiene — defense in depth for a $HOME-mirroring public repo.
+# These names must never be committed, even if copied in from a real $HOME.
+.ssh/
+.gnupg/
+.aws/
+.kube/
+.docker/
+.config/gh/
+.netrc
+.npmrc
+.pypirc
+.git-credentials
+.env
+.env.*
+secrets.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*_history
+.shell_local

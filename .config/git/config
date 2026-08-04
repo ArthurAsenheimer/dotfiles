@@ -1,0 +1,23 @@
+# Portable quality-of-life defaults. Identity, signing and credentials are
+# machine-local: put them in ~/.gitconfig, which git reads after this file.
+
+[branch]
+	sort = -committerdate
+
+[column]
+	ui = auto
+
+[fetch]
+	prune = true
+
+[init]
+	defaultBranch = master
+
+[pull]
+	rebase = true
+
+[rebase]
+	updateRefs = true
+
+[rerere]
+	enabled = true
