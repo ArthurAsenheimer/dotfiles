@@ -21,3 +21,13 @@ id_rsa*
 id_ed25519*
 *_history
 .shell_local
+
+# Agent tools: track only the approved portable guidance files.
+.claude/*
+!.claude/CLAUDE.md
+.codex/*
+!.codex/AGENTS.md
+.pi/*
+!.pi/agent/
+.pi/agent/*
+!.pi/agent/AGENTS.md
