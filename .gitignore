@@ -23,6 +23,7 @@ id_ed25519*
 .shell_local
 
 # Agent tools: track only the approved portable guidance files.
+/.claude.json*
 .claude/*
 !.claude/CLAUDE.md
 .codex/*
