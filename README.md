@@ -17,6 +17,7 @@ private) runs exactly this behind an **opt-in flag** — never by default.
 - `.bashrc` / `.zshrc` — lean shells; both source every `~/.config/shell/*.sh`
 - `.config/shell/` — the actual content, one topic per file: `env.sh`, `aliases.sh`,
   `functions.sh`, `keybindings.sh`. Add a file, it gets sourced — nothing else to wire up.
+  `ff` (the fzf file picker in `functions.sh`) needs `fd` and `fzf` installed.
 - `.config/git/` — portable git defaults (XDG path) plus the global gitignore.
   Identity, signing and credentials stay machine-local in `~/.gitconfig`, which
   git reads after `~/.config/git/config` and therefore wins.
