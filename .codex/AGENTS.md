@@ -1,14 +1,19 @@
 # Global agent guidance
 
-Before writing or changing code, apply the `code-simplicity` skill.
+Before writing or changing code, apply the `code-simplicity` skill. TypeScript
+code also follows the `effect-ts` skill. Before editing code or maintained
+software documentation, read and apply the canonical code-clarity contract owned
+by the `code-design-contract` skill. Use `writing-for-agents` for skills,
+`AGENTS.md`, `CLAUDE.md`, and other agent-facing documents.
 
 ## Git worktree isolation
 
 Before changing any repository-controlled file, identify the repository, its
-primary checkout and default branch, and an exclusive secondary worktree on a
-dedicated non-default branch. Make every change only in that secondary worktree.
-Never edit the primary checkout or default branch directly, including for small,
-local, documentation-only, or configuration changes.
+primary checkout and default branch, and an exclusive secondary worktree
+outside the primary checkout on a dedicated non-default branch. Make every
+change only in that secondary worktree. Never edit the primary checkout or
+default branch directly, including for small, local, documentation-only, or
+configuration changes.
 
 Resolve symlinks before editing. Never change an installed or symlinked copy of a
 repository-owned file; change its canonical source repository in an exclusive
@@ -34,6 +39,12 @@ Lead with the practical conclusion. Communicate with the user in clear, plain
 language and prefer short, direct sentences. Keep the reasoning rigorous, but
 express it as simply as accuracy allows. Explain necessary technical terms
 concretely when first used. Do not use complexity to signal expertise.
+
+Reply to the user in the language of their latest message. Write everything else
+in English: anything meant for another agent, documentation, code, commits, and
+GitHub content. Write GitHub issues and pull requests from the repository's
+templates when it has them. Open longer comments and reviews with their
+conclusion in one or two sentences, such as a review's verdict.
 
 When a message needs an answer from the user, make answering cheap and ask only
 what blocks progress. Put all required decisions at the end under a
